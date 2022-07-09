@@ -4,9 +4,6 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-Gemfile
-Gemfile.lock
-.ruby-version
 
 # Ignore bundler config.
 /.bundle
@@ -31,3 +28,6 @@ Gemfile.lock
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+.ruby-version 
+Gemfile.lock
+
