@@ -8,6 +8,11 @@ const MainNavbar = ({ user, handleLogout }) => {
     if (user) {
       return (
         <>
+        <Link to='/restaurants'>
+            <li>
+            Restaurants
+            </li>
+          </Link>
           <li onClick={() => handleLogout() }>
             Logout
           </li>
