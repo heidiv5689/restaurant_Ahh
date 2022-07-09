@@ -16,8 +16,8 @@ const RestaurantList = ({restaurants, errors, setErrors}) => (
       }
   <h1>All Restaurants </h1>
   <Row lg={4}>
-      { restaurants.map( i => 
-        <Restaurant key={i.id} {...i}/>
+      { restaurants.map( r => 
+        <Restaurant key={r.id} {...r}/>
         )}
         
   </Row>

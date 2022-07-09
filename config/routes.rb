@@ -5,6 +5,16 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   namespace :api do
-    resources :restaurants 
+    resources :restaurants do
+      resources :reservations 
+      get '/unenrolled', to: 'reservations#unenrolled
+      Users'
+      get '/enrolled', to: 'reservations#enrolledUsers'
+      get '/restaurantUsers', to: 'restaurants#restaurantUsers'
+    end
+
+    resources :users do
+      get '/userRestaurants', to: 'users#userRestaurants'
+      end
   end
 end

@@ -7,6 +7,8 @@ import Register from './components/auth/Register';
 import FetchUser from './components/auth/FetchUser';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Restaurants from './components/restaurant/Restaurants';
+import Restaurant from './components/restaurant/Restaurant';
+import Reservations from './components/reservation/Reservations';
 
 const App = () => (
   <>
@@ -14,7 +16,11 @@ const App = () => (
     <FetchUser>
       <Routes>
         <Route path='/' element={<Home />} />
+
         <Route path='/restaurants' element={<Restaurants />} />
+        <Route path='/restaurants/id' element={<Restaurant />} />
+
+        <Route path='/:restaurantId/reservations' element={<Reservations />} />
         <Route path='/' element={<ProtectedRoute />}>
           {/* <Route path='' element={< />} /> */}
         </Route>
